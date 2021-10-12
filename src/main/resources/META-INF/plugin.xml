@@ -1,18 +1,12 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.zexuz.jetbrainscodecommitplugin</id>
-    <name>jetbrains-codecommit-plugin</name>
+    <name>AWS Codecommit Pullrequest</name>
     <vendor>zexuz</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.zexuz.jetbrainscodecommitplugin.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.zexuz.jetbrainscodecommitplugin.services.MyProjectService"/>
+        <toolWindow id="Sample Calendar" secondary="true" icon="AllIcons.General.Modified" anchor="right" factoryClass="com.github.zexuz.jetbrainscodecommitplugin.toolWindow.ToolWindowFactory"/>
     </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.zexuz.jetbrainscodecommitplugin.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
 </idea-plugin>
