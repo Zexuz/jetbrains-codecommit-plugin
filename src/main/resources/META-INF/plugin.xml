@@ -7,6 +7,6 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow id="Sample Calendar" secondary="true" icon="AllIcons.General.Modified" anchor="right" factoryClass="com.github.zexuz.jetbrainscodecommitplugin.toolWindow.ToolWindowFactory"/>
+        <toolWindow id="Sample Calendar" secondary="true" icon="AllIcons.General.Modified" anchor="bottom" factoryClass="com.github.zexuz.jetbrainscodecommitplugin.toolWindow.ToolWindowFactory"/>
     </extensions>
 </idea-plugin>
